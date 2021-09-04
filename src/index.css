@@ -1,13 +1,108 @@
 body {
+  font-family: "RocknRoll One", sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #8479cb;
+}
+h1 {
+  color: #e1ebfd;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1rem;
+  text-align: center;
+  margin: 3rem 0;
+  text-shadow: -1px -1px 1.5px #e1ebfd;
+}
+h1:hover {
+  font-size: 2.5rem;
+  transition-duration: 1s;
+}
+.input {
+  background-color: #e1ebfd;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 600px;
+  border-radius: 8px;
+}
+.input:focus {
+  outline: 5px solid;
+  outline-color: #6d5be0;
+  border: none;
+}
+.add-todo {
+  margin: 0 2rem;
+  border: 2px solid;
+  border-radius: 50%;
+  outline-color: #e1ebfd;
+  border-color: #e1ebfd;
+}
+.add-todo:hover {
+  width: 42px;
+  height: 42px;
+  padding: 1px;
+  cursor: pointer;
+  transition-duration: 1s;
+}
+.add {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+.Active-btn,
+.Completed-btn,
+.All-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 108px;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+  font-size: 1rem;
+}
+.Active-btn:hover {
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+  transition-duration: 1s;
+  background-color: rgb(231, 107, 107);
+  color: #e1ebfd;
+}
+.Completed-btn:hover {
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+  transition-duration: 1s;
+  background-color: rgb(32, 177, 92);
+  color: #e1ebfd;
+}
+.All-btn:hover {
+  padding: 0.6rem 1.1rem;
+  cursor: pointer;
+  transition-duration: 1s;
+  background-color: rgb(33, 100, 224);
+  color: #e1ebfd;
+}
+.btn-status {
+  display: flex;
+  justify-content: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.task {
+  width: 270px;
+  height: 120px;
+  background-color: #b5b8dd;
+  list-style-type: none;
+  border-radius: 12px;
 }
+
+.task-manager {
+  display: inline;
+}
+/* textarea {
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: #b5b8dd;
+}
+textarea:focus {
+  margin-top: 20px;
+  border-radius: 8px;
+  outline: 50px solid;
+  outline: rgb(66, 226, 66);
+} */
